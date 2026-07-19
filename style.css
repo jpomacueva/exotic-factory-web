@@ -1,43 +1,56 @@
-body{
-
-    font-family:Slugs Racer;
-
-    background:#f4f4f4;
-
-    margin:0;
-
-    text-align:center;
-
+body {
+    font-family: 'Slugs Racer', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    text-align: center;
 }
 
-header{
-
-    background:#000000;
-
-    color:white;
-
-    padding:90px 30px;
-
+/* El contenedor padre ahora es negro */
+header {
+    background: #000000; 
+    color: white;
 }
 
-main{
-
-    margin-top:40px;
-
+/* LA LÍNEA DE ARRIBA: Ahora es BLANCA con texto NEGRO */
+.barra-anuncio {
+    background: #ffffff; /* Fondo blanco */
+    color: #000000;      /* Texto negro */
+    padding: 10px 20px;  /* La hace delgada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #e5e7eb; /* Opcional: una línea gris muy fina abajo para definirla */
 }
 
-button{
+/* EL ENCABEZADO DE ABAJO: Se mantiene NEGRO */
+.menu-principal {
+    padding: 40px 20px;  /* Espaciado para el logo y menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
-    padding:12px 25px;
+/* Enlaces del menú en blanco para que resalten sobre el fondo negro */
+.menu-principal nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
 
-    border:none;
+main {
+    margin-top: 40px;
+}
 
-    background:#2563eb;
-
-    color:white;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
 }
