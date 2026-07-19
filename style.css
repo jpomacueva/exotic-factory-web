@@ -15,7 +15,7 @@ header {
 .barra-anuncio {
     background: #ffffff; /* Fondo blanco */
     color: #000000;      /* Texto negro */
-    padding: 10px 20px;  /* La hace delgada */
+    padding: 50px 20px;  /* La hace delgada */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ header {
 
 /* EL ENCABEZADO DE ABAJO: Se mantiene NEGRO */
 .menu-principal {
-    padding: 40px 20px;  /* Espaciado para el logo y menú */
+    padding: 80px 20px;  /* Espaciado para el logo y menú */
     display: flex;
     justify-content: center;
     align-items: center;
