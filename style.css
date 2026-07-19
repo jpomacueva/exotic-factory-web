@@ -84,3 +84,52 @@ button{
 
 
 }
+
+/* Contenedor principal de la tienda */
+.galeria-productos {
+    display: grid;
+    /* Crea 4 columnas del mismo tamaño de forma automática */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; /* Espacio de separación entre los productos */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra toda la galería en la pantalla */
+}
+
+/* Cada producto individual */
+.tarjeta-producto {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido (y el texto SOLD OUT) a la izquierda */
+    position: relative;
+}
+
+/* Estilo para las imágenes de los productos */
+.tarjeta-producto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Evita que las imágenes se deformen */
+    margin-top: 10px;    /* Separa la imagen de la etiqueta de arriba */
+}
+
+/* Estilo para el texto de SOLD OUT */
+.etiqueta-soldout {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;      /* Color gris oscuro/negro como en la imagen */
+    letter-spacing: 1px; /* Separa un poco las letras para darle estilo */
+}
+
+/* RESPONSIVE: Para que en celulares no se vea minúsculo */
+@media (max-width: 768px) {
+    .galeria-productos {
+        grid-template-columns: repeat(2, 1fr); /* En celulares se divide en 2 columnas */
+        gap: 15px;
+        padding: 20px;
+    }
+}
+
+
+
